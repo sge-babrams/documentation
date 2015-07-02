@@ -36,9 +36,9 @@ sensu_gem 'sensu-plugins-disk-checks' do
 end
 ```
 
-Using the Chef **package** resource
+Using the Chef **gem_package** resource
 ```
-package 'sensu-plugins-disk-checks' do
+gem_package 'sensu-plugins-disk-checks' do
   options('--prerelease') # only needed if it is in an alpha state
   version '0.0.1.alpha.1'
 end
